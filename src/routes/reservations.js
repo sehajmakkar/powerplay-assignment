@@ -5,14 +5,15 @@ const {
   cancelReservation,
   getEventSummary,
 } = require("../controllers/reservationController");
+const validateReservation = require("../middleware/validateReservation");
 
-// GET /reservations
+// GET /reservations - Event summary
 router.get("/", getEventSummary);
 
-// POST /reservations
-router.post("/", reserveSeats);
+// POST /reservations - Reserve seats
+router.post("/", validateReservation, reserveSeats);
 
-// DELETE /reservations/:reservationId
+// DELETE /reservations/:reservationId - Cancel reservation
 router.delete("/:reservationId", cancelReservation);
 
 module.exports = router;
