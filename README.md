@@ -82,13 +82,7 @@ Choose one of the following options:
 mongod
 ```
 
-**Option B: Using Docker**
-
-```bash
-docker run -d -p 27017:27017 --name mongodb mongo:latest
-```
-
-**Option C: MongoDB Atlas (Cloud)**
+**Option B: MongoDB Atlas (Cloud)**
 
 1. Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/atlas)
 2. Get your connection string and update `.env`:
@@ -105,12 +99,6 @@ MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/ticketboss
 
 ```bash
 npm run dev
-```
-
-**Production mode:**
-
-```bash
-npm start
 ```
 
 The server will start at `http://localhost:3000`
