@@ -1,0 +1,19 @@
+{
+  "name": "ticketboss",
+  "version": "1.0.0",
+  "description": "Event ticketing API with optimistic concurrency control",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.2",
+    "uuid": "^13.0.0"
+  }
+}
